@@ -32,10 +32,10 @@ class ToDoTableTableViewController: UITableViewController {
 
     // MARK: - Table view data source
 
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 1
-    }
+//    override func numberOfSections(in tableView: UITableView) -> Int {
+//        // #warning Incomplete implementation, return the number of sections
+//        return 1
+//    }
 
         override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
           return toDos.count
@@ -104,5 +104,11 @@ class ToDoTableTableViewController: UITableViewController {
       if let addVC = segue.destination as? AddToDoViewController {
         addVC.previousVC = self
       }
+        if let completeVC = segue.destination as? CompleteToDoViewController {
+            if let toDo = sender as? ToDo {
+              completeVC.selectedToDo = toDo
+              completeVC.previousVC = self
+            }
+          }
     }
 }

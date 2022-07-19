@@ -98,7 +98,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Add To Do" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Lim-1m-hex">
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Lim-1m-hex">
                                 <rect key="frame" x="80" y="179" width="263" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -131,7 +131,7 @@
                     <navigationItem key="navigationItem" id="hNS-6B-jPa"/>
                     <connections>
                         <outlet property="importantSwitch" destination="9nm-0C-tc8" id="3FD-aa-eJ4"/>
-                        <outlet property="titleTextField" destination="wYg-So-UbB" id="KJ6-hK-Qhy"/>
+                        <outlet property="titleTextField" destination="Lim-1m-hex" id="yG2-1X-LJ8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ks5-aS-tsy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
